@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% block title %}Shop{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="../static/shop.css" type="text/css">
+
+<body>
+    <div class="container text-center pt-3">
+      <div class="row">
+          <a href="/contact-us" style="text-decoration:none; font-family: 'Dancing Script', cursive;color:#3c2414;"><h2>Want to design your own space?</h2></a>
+          <figure>
+              <video width="auto" height="300" controls>
+              <source src="../static/Images/short_video.mp4" type="video/mp4">
+              <source src="../static/Images/sfx_audience_cheer_02.ogg" type="video/ogg">
+              Your browser does not support the video tag
+              </video>
+              <figcaption style="font-style:italic;">
+                  Courtesy of 
+                  <a href="https://dribbble.com/shots/7549049-Living-Room" target="__blank" style="font-style:italic; text-decoration:none; color: #fb8c44;">Guillaume Kurkdjian</a>
+                  and
+                  <a href="https://youtu.be/jFVguCEVAUs" target="__blank" style="font-style:italic; text-decoration:none; color: #fb8c44;"> Starry Attic</a>
+              </figcaption>
+          </figure>
+          <a href="/contact-us"><button type="submit" class="btn btn-info">Contact us now!</button></a>
+        </div>
+      
+      <h2 class="pt-5 pb-2"><strong>Homewares</strong></h2>
+      <div class="row row-cols-4 pb-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/furniture-pillow-bedroom-material-quilt-textile-1165821-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Classic White Duvet Cover Set</b>
+                  <br>Made of 100% cotton, sustainable and timeless.
+                </p>
+                <h5 class="card-title">$30.00</h5>                  
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/bedroom-bed-furniture-room-bed-sheet-property-1565139-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Purple Duvet Cover</b>
+                  <br>An elegant duvet cover to bring more style to your bed.
+                </p>
+                <h5 class="card-title">$20.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/bedroom-furniture-bed-room-property-bed-sheet-1552143-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Dark Purple Duvet with Collage Pillowcase</b>
+                  <br>A mix of elegance and fun!
+                </p>
+                <h5 class="card-title">$60.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/cottage-furniture-room-pillow-bedroom-mattress-569234-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Striped Bedding Sheet Set</b>
+                  <br>A stylish set for kids.
+                </p>
+                <h5 class="card-title">$40.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-4 pb-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/furniture-floor-table-laminate-flooring-room-kitchen-dining-room-table-1532449-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Darkwood Dining Table 4 Chairs</b>
+                  <br>Instantly bring modern touch to your dining area.
+                </p>
+                <h5 class="card-title">$100.00</h5>                  
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/table-wood-chair-floor-sink-furniture-91480-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>White Dining Table 4 Chairs</b>
+                  <br>Smooth to the eye and to the touch.
+                </p>
+                <h5 class="card-title">$110.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/white-vintage-retro-texture-leaf-flower-1329942-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Flowers Wallpaper</b>
+                  <br>Add some colour to your wall!
+                </p>
+                <h5 class="card-title">$70.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/architectural-architecture-art-backdrop-background-bath-1595995-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Classic Tiles Green-White Wallpaper</b>
+                  <br>A simple and classic look for your wall.
+                </p>
+                <h5 class="card-title">$40.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-4 pb-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/nature-wood-texture-floor-wall-pattern-1057463-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Rattan Plait Wallpaper</b>
+                  <br>Give a textured look to your wall.
+                </p>
+                <h5 class="card-title">$45.00</h5>                  
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/antique-window-frame-decor-interior-design-mirror-1336008-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>50x40cm Copper Mirror</b>
+                  <br>Copper engravings, giving that vintage look.                
+                </p>
+                <h5 class="card-title">$40.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/light-night-glass-reflection-darkness-lamp-1406899-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Night Pendant Lamp</b>
+                  <br>A perfect way to add an extra touch of tasteful decoration.
+                </p>
+                <h5 class="card-title">$50.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../static/Images/screen-light-color-living-room-lampshade-lighting-1333974-pxhere.com.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><b>Living Room Decoration Lamps</b>
+                  <br>Make a lasting impression and create a welcoming environment.
+                </p>
+                <h5 class="card-title">$70.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

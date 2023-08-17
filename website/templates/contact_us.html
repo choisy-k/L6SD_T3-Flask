@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block title %}Contact Us{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="../static/contact.css" type="text/css">
+
+<body>
+  <div class="container pt-3">
+    <div class="row text-center">
+      <h1 id="contact_title">Contact Us</h1>
+    </div>
+    <div class="row text-center">
+        <p id="contact_info" style="text-shadow: 1px 1px white;">
+          21 Thisway Road, Auckland 1111 New Zealand
+          <br>
+          Phone: 027-XXX-XXXX
+          <br>
+          Email: definitelyexist@noitsnot.com
+          <br>
+          Fax number: 000-123-4567
+          <br><br>
+          Or send us a message through the form below.
+        </p>
+    </div>
+    <div class="row mx-5">
+      <div class="col offset"></div>
+      <form class="col-md-8">
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="name">Name</label>
+          <input type="text" class="form-control" placeholder="Enter name" name="text">                
+        </div>
+      
+        <!-- Email input -->
+        <div class="form-outline mb-4">                
+          <label class="form-label" for="email">Email</label>
+          <input type="email" class="form-control" placeholder="Enter email" name="email">
+        </div>
+
+        <!-- Subject input -->
+        <div class="form-outline mb-4">                
+          <label class="form-label" for="subject">Subject</label>
+          <input type="text" class="form-control" placeholder="Enter subject" name="text">
+        </div>
+      
+        <!-- Message input -->
+        <div class="form-outline mb-4">                
+          <label class="form-label" for="message">Your message</label>
+          <textarea class="form-control" rows="4"></textarea>
+        </div>
+      
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" />
+          <label class="form-check-label" style="font-weight:normal;">
+            Send me a copy of this message
+          </label>
+        </div>
+        
+        <div class="text-center">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+        
+      </form>
+      <div class="col offset"></div>
+    </div>
+</div>
+</body>
+{% endblock %}

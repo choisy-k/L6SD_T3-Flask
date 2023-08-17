@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block title %}About Us{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="../static/about_us.css" type="text/css">
+
+<body>
+    <div class="container pt-5">
+      <!-- CEO and MD section -->
+        <section class="row">
+          <div class="col-6">            
+            <a href="https://www.flaticon.com/free-icons/person" target="_blank" title="person icons"><img id="the_image" src="../static/Images/woman.png" width="300px" style="float:right;"></a>
+          </div>
+          <div class="col-4">
+            <h2 id="ceo_md_name" style="font-weight: bold;">Valentina Carter</h2>
+            <h3 id="the_titles">Chief Executive Officer of Captivate Interiors</h3>
+            <h4 id="the_roles" style="font-style:italic;">Designer</h4>
+            <p id="about-quote">Valentina established Captivate Interiors with Dayton in 2010. She has been designing and working in the building industry for more than 20 years and has vast experience in commercial and residential projects, from office fit outs to cafes and private homes.</p>
+            <p id="message" style="font-style:italic;"><strong>'A good interior affects how comfortable you are with the space.'</strong></p>
+            <button id="MD_btn" onclick="changeInfo()" type="submit" class="btn btn-info mt-2">Our MD</button>
+          </div>
+        </section>
+        <div class="row text-center mt-5 mb-3">
+          <h2>The Staff</h2> 
+        </div>
+        <!-- The staff section -->
+        <section class="row">
+          <div class="col">
+            <div class="card h-100" id="staff1">
+              <a href="#" id="hide1" onclick="hideStaff1()" class="btn btn-primary">Hide</a>
+              <img class="card-img-top" onmouseover="showButton1()" src="../static/Images/man (1).png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Finn Berger</h4>
+                <p class="card-text"><strong>Accounts</strong><br>Finn takes care of our accounts, making sure fee and product claims are all on track to ensure the best client experience.</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="staff2">
+              <a href="#" id="hide2" onclick="hideStaff2()" class="btn btn-primary">Hide</a>
+              <img class="card-img-top" onmouseover="showButton2()" src="../static/Images/man (2).png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Gary Fields</h4>
+                <p class="card-text"><strong>Senior Interior Designer</strong><br>Gary's talent is driven by his passion for design and a love of all elements related to interior design, whether architecture, art, furniture design, product design or textiles.</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="staff3">
+              <a href="#" id="hide3" onclick="hideStaff3()" class="btn btn-primary">Hide</a>
+              <img class="card-img-top" onmouseover="showButton3()" src="../static/Images/woman (2).png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Selin Osborn</h4>
+                <p class="card-text"><strong>Senior Interior Architect</strong><br>From renovations to new builds Selin has the versatility and experience to manage and deliver every aspect of a design project.</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="staff4">
+              <a href="#" id="hide4" onclick="hideStaff4()" class="btn btn-primary">Hide</a>
+              <img class="card-img-top" onmouseover="showButton4()" src="../static/Images/man.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Niam Rosario</h4>
+                <p class="card-text"><strong>Interior Architect</strong><br>Niam has always had a passion for interiors and architecture, and has been fortunate to travel around the world and see first-hand many famous, constantly-inspiring architecturally designed buildings.</p>                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" id="staff5">
+              <a href="#" id="hide5" onclick="hideStaff5()" class="btn btn-primary">Hide</a>
+              <img class="card-img-top" onmouseover="showButton5()" src="../static/Images/woman (3).png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Mariyah Butler</h4>
+                <p class="card-text"><strong>Administration</strong><br>Mariyah looks after our administration and provides office support to our team. Mariyah’s passion is to travel-and-learn and apply this to life and work!</p>                                
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+
+    <!-- Hide/Show-All Button -->
+    <div class="row container-fluid p-0 py-3">
+      <div class="col-3 offset"></div>
+      <div class="col-6">
+        <button id="all_staff" onclick="hideShowAll()" type="submit" class="btn btn-info mt-2">Hide All</button>
+      </div>          
+    </div>
+    <script src="../static/about_us.js"></script>
+</body>
+{% endblock %}

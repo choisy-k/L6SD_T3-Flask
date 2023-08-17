@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="../static/auth.css" type="text/css">
+
+<div class="container-md">
+  <div class="row mx-5">
+    <div class="col offset"></div>
+    <form method="POST" class="col-lg-6 mt-4">
+    <div class="text-center"><h1>Sign Up</h1></div>
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" class="form-control" id="yourName" name="yourName" placeholder="Enter name">
+      </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text" class="form-control" id="password1" name="password1" placeholder="Enter password">
+      </div>
+    <div class="form-group">
+      <label for="password">Confirm Password</label>
+      <input type="text" class="form-control" id="password2" name="password2" placeholder="Reenter password">
+    </div>
+    <div class="text-center"><button type="submit" class="btn btn-primary">Sign Up</button></div>    
+  </form>
+  <div class="col offset"></div>
+  </div>
+</div>
+
+{% endblock %}
